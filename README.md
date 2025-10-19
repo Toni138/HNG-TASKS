@@ -1,19 +1,29 @@
+** Backend Wizards Stage 0 - Dynamic Profile Endpoint**
+
+This project is part of the Backend Wizards Internship Stage 0 task.
+
+** Live API URL**
+https://your-app-name.up.railway.app/me
+
+** How to Run Locally**
+1. Clone this repo
+2. Run `npm install`
+3. Run `node task-0.js`
+4. Visit `http://localhost:3000/me` to see the output
+
+** Stack**
+Node.js + Express + Axios
+
+** Features**
+- Returns a JSON response with:
+  - Status
+  - User info (email, name, stack)
+  - Current UTC timestamp
+  - Random cat fact from Cat Facts API
+
+** Lessons Learned**
+- How REST APIs work
+- How to integrate external APIs
+- How to deploy using Railway
 Backend Wizards — Stage 0 Task: Dynamic Profile Endpoint
 
-This is my submission for the Backend Wizards Stage 0 Task.  
-It’s a simple RESTful API endpoint that returns my profile information and a random cat fact fetched from the [Cat Facts API](https://catfact.ninja/fact).
-
-Features
-- A GET endpoint at `/me`
-- Returns a JSON response in this exact format:
-json
-{
-  "status": "success",
-  "user": {
-    "email": "youremail@example.com",
-    "name": "Your Full Name",
-    "stack": "Node.js/Express"
-  },
-  "timestamp": "2025-10-17T12:34:56.789Z",
-  "fact": "Random cat fact fetched from the Cat Facts API"
-}
